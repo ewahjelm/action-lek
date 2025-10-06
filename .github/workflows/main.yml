@@ -1,7 +1,5 @@
 name: My First Action
-
 on: push
-
 jobs:
   deploy:
     name: react_on_push:
