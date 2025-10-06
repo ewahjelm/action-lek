@@ -1,5 +1,6 @@
 name: My First Action
 on: push
+
 jobs:
   deploy:
     name: react_on_push
@@ -9,4 +10,4 @@ jobs:
       uses: sebastianpopp/discord-action@releases/v2
       with:
         webhook: ${{secrets.SECRET_NINJA}}
-        message: ${{github.repository}} has been successfullt deployed.
+        message: Ewa är bäst.
