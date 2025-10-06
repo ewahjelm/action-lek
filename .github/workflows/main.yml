@@ -1,15 +1,14 @@
 name: My First Action
 
-on:
-  push:
-    branches:[ main ]
+on: push
 
 jobs:
-  react_on_push:
+  deploy:
+    name: react_on_push:
     runs-on: ubuntu-latest
     steps:
     - name: discord
       uses: sebastianpopp/discord-action@releases/v2
       with:
         webhook: $ {{ secrets.SECRET_NINJA }}
-        message: $ {{ github.actor }} has successfullt pushed to main.
+        message: $ {{ github.repository }} has been successfullt deployed.
