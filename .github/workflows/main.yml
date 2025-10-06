@@ -8,5 +8,5 @@ jobs:
     - name: discord
       uses: sebastianpopp/discord-action@releases/v2
       with:
-        webhook: $ {{ secrets.SECRET_NINJA }}
-        message: $ {{ github.repository }} has been successfullt deployed.
+        webhook: $ {{secrets.SECRET_NINJA}}
+        message: $ {{github.repository}} has been successfullt deployed.
