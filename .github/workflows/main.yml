@@ -2,7 +2,7 @@ name: My First Action
 on: push
 jobs:
   deploy:
-    name: react_on_push:
+    name: react_on_push
     runs-on: ubuntu-latest
     steps:
     - name: discord
